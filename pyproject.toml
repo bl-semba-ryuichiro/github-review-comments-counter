@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "github-review-comments-counter"
+version = "0.1.0"
+description = "A tool to filter GitHub PR reviews"
+authors = [
+    { name = "Ryuichiro Semba", email = "semba@beanslabo.co.jp" }
+]
+license = { file = "LICENSE" }
+dependencies = [
+    "requests",
+    "argparse",
+    "python-dotenv"
+]
+
+[tool.setuptools]
+packages = ["github_review_counter", "utils"]
